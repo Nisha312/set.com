@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form Event. </title>
+    <style>
+        #box1{
+            width: 30%;
+            padding: 10px;
+            background-color: rgb(223, 226, 13);
+            color: beige;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box1">
+    <h1>jquery get method.</h1>
+    <form id="regform">
+</div>
+    <input type="text" id="name">
+    <input type="text" id="email">
+    <select id="color">
+        <option>green</option>
+        <option>red</option>
+        <option>blue</option>
+    </select>
+    <button type="button" id="btnclick"> submit</button>
+</form>
+<div id="value"></div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+    
+     $(document).ready(function(){
+         $('#btnclick').click(function(){
+
+            let a = $('#name').val();
+            console.log(a);
+         });
+         
+     });
+        </script>
+    
+</body>
+</html> 
